@@ -7,8 +7,9 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Hind Siliguri', sans-serif;
   color: #222;
+  background-color:rgb(8, 0, 116)
 }
 /* Link Styles */
 
@@ -22,46 +23,45 @@ a:hover {
 
 /* Section Styles */
 
-.main-nav {
-  width: 100%;
-  background: black;
-  min-height: 30px;
-  padding: 10px;
-  position: fixed;
-  text-align: center;
-}
-.nav {
+nav {
   display: flex;
-  justify-content: space-around;
-  font-weight: 700;
-  list-style-type: none;
+  width: 100%;
+  background-color:rgb(8, 0, 116)
+  min-height: 30px;
+  max-width: 1200px;
+  padding: 0 30px;
   margin: 0 auto;
-  padding: 0;
+  justify-content: space-around;
+  text-align: center;
+  font-weight: 700;
 }
 
-.nav .name {
-    display: block;
-    margin-right: auto;
-    color: white;
+.name {
+  display: block;
+  margin-right: auto;
+  color: white;
 }
-.nav li {
-  padding: 5px 10px 10px 10px;
+
+nav a {
+  display: inline;
+  color: white;
+  padding: 15px 10px 15px 10px;
 }
-.nav a {
-  transition: all .5s;
-}
-.nav a:hover {
-  color: white
+
+nav a:hover {
+  color: rgb(255, 196, 0);
 }
 
 header {
+  min-height: 470px;
   text-align: center;
-  background: url('images/backgrounded.jpg') no-repeat top center ;
-  background-size: cover;
   overflow: hidden;
-  padding-top: 50px;
-  background-color: rgba(102, 157, 209, 0.842);
+  padding-top: 60px;
+  background: url('images/img1997.jpeg') no-repeat top center;
+  background-size: cover;
+  margin: 0;
 }
+
 header {
   line-height: 1.5;
 }
@@ -70,30 +70,34 @@ header .profile-image {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 1px solid rgb(219, 200, 157);
+  border: 1px solid rgb(231, 231, 231);
   transition: all .5s;
+
 }
 header .profile-image:hover {
   transform: scale(1.2) rotate(5deg);
 }
-.tag {
-
-  color: #efefef;
+.tag-name{
+  background-color: rgb(206, 193, 183);
+  color: #000000;
   padding: 10px;
   border-radius: 5px;
   display: table;
   margin: 10px auto;
 } 
-.location {
-  background-color: rgb(219, 200, 157);
-  color: black;
+.tag-location {
+  padding: 10px;
+  border-radius: 5px;
+  display: table;
+  margin: 10px auto;
+  background-color: white;
 }
 .card {
   margin: 30px;
   padding: 20px 40px 40px;
   max-width: 500px;
   text-align: left;
-  background: rgb(219, 200, 157);
+  background: rgb(206, 193, 183);
   border-bottom: 4px solid #ccc;
   border-radius: 6px;
   transition: all .5s;
@@ -122,10 +126,25 @@ ul.skills {
   background: #0399ff;
 }
 
+.flight-pic{
+  width:300px;
+  height:300px;
+  object-fit:cover;
+}
+
+figcaption {
+  text-align: center;
+  font-size: large;
+  padding: 10px;
+  margin: 10px;
+}
+
+
 footer {
   width: 100%;
   min-height: 30px;
   padding: 20px 0 40px 20px;
+  color: white;
 }
 
 footer .copyright {
@@ -150,7 +169,7 @@ a.social {
   width: 30px;
   height: 30px;
   background-size: 30px 30px;
-  opacity: .4;
+  opacity: .8;
   transition: all .5s;
 }
 a.twitter {
